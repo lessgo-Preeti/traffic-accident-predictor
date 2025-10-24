@@ -36,13 +36,13 @@ ENV/
 data/raw/*.csv
 data/raw/*.zip
 data/processed/*.csv
-*.csv
+data/sample/*.csv
 *.parquet
 *.feather
 
-# Model files (large binary files)
-models/*.pkl
-models/*.joblib
+# Model files - Allow trained models but exclude large files
+# models/*.pkl
+# models/*.joblib
 models/*.h5
 models/*.pt
 

@@ -81,10 +81,12 @@ def load_data():
             df = pd.read_csv('data/sample/india_accidents_sample.csv')
             return df
         else:
-            return None
+            # Return empty dataframe if no data - analytics will be disabled
+            st.warning("⚠️ Sample data not available. Analytics page will be limited. Prediction page will work normally.")
+            return pd.DataFrame()
     except Exception as e:
-        st.error(f"Error loading data: {e}")
-        return None
+        st.warning(f"⚠️ Could not load sample data: {e}. Prediction will still work!")
+        return pd.DataFrame()
 
 
 def home_page():

@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1-Score,Train Time
+Random Forest,69.90%,0.6724,0.6990,0.6589,0.30s
+XGBoost,69.40%,0.6664,0.6940,0.6741,1.61s
+Decision Tree,62.80%,0.6300,0.6280,0.6280,0.04s
